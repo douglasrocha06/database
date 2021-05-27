@@ -10,13 +10,13 @@ echo 'create database api_produtos default character set utf8 default collate ut
 
 #------------------- Create Tables  -----------------------------------------
 #Clientes
-mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_clientes < api_clientes.sql
+mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_clientes < Clientes.sql
 
 #Vendas
-mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_inventario < api_inventario.sql
+mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_inventario < Inventario.sql
 
 #Produtos
-mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_produtos < api_produtos.sql
+mysql -h djlbanco.cxycaymkd24m.us-east-1.rds.amazonaws.com -u admin -p'12345678' api_produtos < Catalogo.sql
 
 #clearh bash_history
 history -cw
