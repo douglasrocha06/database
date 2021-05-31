@@ -7,7 +7,7 @@ create table clientes(
     email varchar(100)
     )default charset=utf8;
     
-insert	into cliente values
+insert	into clientes values
 	(default,'Douglas','Rua Guarabira','2323','douglas.rocha6@hotmail.com'),
     (default,'Matheus','Rua Jurubia','4545','matheus.oliveira@hotmail.com'),
     (default,'Jose','Rua Matias Franca','5532','jose.silva@hotmail.com'),
