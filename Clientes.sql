@@ -8,10 +8,10 @@ create table clientes(
     )default charset=utf8;
     
 insert	into clientes values
-    (default,'Douglas','Rua Guarabira','2323','douglas.rocha6@hotmail.com'),
-    (default,'Matheus','Rua Jurubia','4545','matheus.oliveira@hotmail.com'),
-    (default,'Jose','Rua Matias Franca','5532','jose.silva@hotmail.com'),
-    (default,'Lucas','Rua Andradina','5643','lucas.rodrigues@hotmail.com');
+    (default,'Douglas','Rua Guarabira','1999-09-09','douglas.rocha6@hotmail.com'),
+    (default,'Matheus','Rua Jurubia','1999-09-09','matheus.oliveira@hotmail.com'),
+    (default,'Jose','Rua Matias Franca','1999-09-09','jose.silva@hotmail.com'),
+    (default,'Lucas','Rua Andradina','1999-09-09','lucas.rodrigues@hotmail.com');
     
 create table enderecos (
 	idEndereco int(11) primary key auto_increment,
