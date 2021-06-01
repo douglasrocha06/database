@@ -1,8 +1,8 @@
 /*Criação das tabelas*/
 create table clientes(
-	id int not null auto_increment primary key,
-	nome varchar(100) not null,
-	cpf  int(11),
+    id int not null auto_increment primary key,
+    nome varchar(100) not null,
+    cpf  int(11),
     nascimento date,
     email varchar(100)
     )default charset=utf8;
