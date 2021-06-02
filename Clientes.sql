@@ -1,4 +1,7 @@
-/*Criação das tabelas*/
+create database api_clientes;
+
+use api_clientes;
+
 create table clientes(
     id int not null auto_increment primary key,
     nome varchar(100) not null,
@@ -8,21 +11,23 @@ create table clientes(
     )default charset=utf8;
     
 insert	into clientes values
-    (default,'Douglas','Rua Guarabira','1999-09-09','douglas.rocha6@hotmail.com'),
-    (default,'Matheus','Rua Jurubia','1999-09-09','matheus.oliveira@hotmail.com'),
-    (default,'Jose','Rua Matias Franca','1999-09-09','jose.silva@hotmail.com'),
-    (default,'Lucas','Rua Andradina','1999-09-09','lucas.rodrigues@hotmail.com');
-    
-create table enderecos (
-	idEndereco int(11) primary key auto_increment,
+    (default,'Douglas','10625716655','1999-08-06','douglas.rocha6@hotmail.com'),
+    (default,'Matheus','76954371359','1999-10-17','matheus.oliveira@hotmail.com'),
+    (default,'Jose','10648316595','1999-11-04','jose.silva@hotmail.com'),
+    (default,'Lucas','12340785644','1978-12-02','lucas.rodrigues@hotmail.com');
+
+    create table enderecos (
+    idEndereco int(11) primary key auto_increment,
     rua varchar(100) not null,
     numero int (10) not null,
     complemento varchar(100), 
     bairro varchar (100) not null,
     cidade varchar (100) not null,
     estado varchar (100) not null,
-    cep varchar (8) not null
-)   default charset=utf8;
+    cep varchar (8) not null,
+    idCliente int(11),
+    foreign key(idCliente) references enderecos(idEndereco)
+   )default charset=utf8;
 
 insert into enderecos (rua, numero, complemento, bairro, cidade, estado, cep) values
 	('Rua Souza','76','','Jd Cruzeiro','Bahia','BA','09852765'),
